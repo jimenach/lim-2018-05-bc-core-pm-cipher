@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(https://http2.mlstatic.com/pasta-papel-de-carta-italia-fiorenza-conj-4-pc-ah-D_NQ_NP_620401-MLB20318209200_062015-F.jpg);
+    background-size: cover;
+  }
+  
+  h2{
+    color:#737b9c;
+  }
+  
+  .agrupa{
+  
+    width: 95%;
+      max-width: 500px;
+      margin: auto;
+      background: #f7eacd;
+      border-radius: 7px;
+  }
