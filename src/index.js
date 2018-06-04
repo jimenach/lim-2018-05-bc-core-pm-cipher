@@ -1,24 +1,34 @@
-var textarea = document.getElementById("code");
-var n = document.getElementById("n");
-var reset = document.getElementById("reset");
-var code = textarea.value;
-var output = document.querySelector(".output");
-var solution = document.getElementById("solution");
+
+let mensajeInput = document.getElementById("message");
+let offset = document.getElementById("key");
+let buttonReset = document.getElementById("reset");
+let mensajeOutput = document.getElementById("aparece");
+let buttonCifrar = document.getElementById("cifrar");
+let buttonDescifrar = document.getElementById ("descifrar")
 
 
-function drawOutput() {
-  output.innerHTML = textarea.value;
-}
+buttonReset.addEventListener("click", () => {
+mensajeOutput.innerHTML = "  ", mensajeInput.innerHTML = "   "});
 
-reset.addEventListener("click", function() {
-  textarea.value = code;
-  drawOutput();
+buttonCifrar.addEventListener("click", () => {
+
+let n = parseInt(offset.value);
+
+let string = mensajeInput.value;
+
+let cifrado = cipher.encode (n , string)
+
+mensajeOutput.innerHTML = cifrado;
 });
 
-solution.addEventListener("click", function() {
-  textarea.value = '<p>cifrado</p>';
-  drawOutput();
-});
+buttonDescifrar.addEventListener("click", () => {
 
-textarea.addEventListener("input", drawOutput);
-window.addEventListener("load", drawOutput);
+    let n = parseInt(offset.value);
+    
+    let string = mensajeInput.value;
+    
+    let cifrado = cipher.decode (n , string)
+    
+    mensajeOutput.innerHTML = cifrado;
+    });
+  

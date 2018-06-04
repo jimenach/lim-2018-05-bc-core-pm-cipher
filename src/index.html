@@ -1,26 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Documento sin título</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Documento sin título</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <form class= "agrupa">
-<h2>Mensaje para descifrar</h2>
-<textarea id="code" class="input">Mensaje a descifrar</textarea>
-<textarea id="n" class="input">Nro de caracteres </textarea>
-<h2>Resultado</h2>
-<div class="output"><textarea>Mensaje a descifrar</textarea></div>
-<div class="controls">
-  <input id="reset" type="button" value="Resetear" />
-  <input id="solution" type="button" value="Mostrar solución" />
-</div>
-</div>
-</form>
-<script type="text/javascript" src="index.js" ></script>
+  <form class="agrupa">
+    <h2>CIFRADO VINTAGE</h2>
+    <div class="input" align=center><textarea id="message" class="caja" placeholder="Ingresa tu mensaje"></textarea></div>
+    
+    <div align=center><input type="text" id="key" class="caja" size=60 placeholder="Numero de desplazamiento"></div>
+    
+    <div class="controls" class="caja_botones" align=center>
+      
+      <input id="reset" type="button" value="Resetear" class="boton_personalizado"/>
+      <input id="cifrar" class"imprimir" type="button" value="Cifrar" class="boton_personalizado"/>
+      <input id="descifrar" type="button" value="Descifrar" class="boton_personalizado"/>
+      
+    </div>
+   <!--  <input type="number" id="key" min="0" max="100" value="0" size="30"> -->
+    <!-- <br> -->
+    <h2>Resultado</h2>
+    <div align=center>
+    <textarea  class="caja" id="aparece"></textarea>
+    </div>
+ 
+    
+  </form>
+  <script type="text/javascript" src="index.js"></script>
+  <script src="cipher.js"></script>
 
 </body>
+
 </html>
