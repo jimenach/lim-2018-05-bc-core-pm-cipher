@@ -122,10 +122,27 @@ En el `README.md` cuéntanos cómo pensaste en los usuarios al desarrollar tu
 producto y cuál fue tu proceso para definir el producto final a nivel de
 experiencia y de interfaz.
 
-* quiénes son los principales usuarios de producto
+-* quiénes son los principales usuarios de producto
+
+* quiénes son los principales usuarios de producto:
+
+Los principales usuarios del producto son personas entre 30 y 45 años
+
+
+
 * cuáles son los objetivos de estos usuarios en relación con el producto
+
+Estas personas que pasaron de usar el papel, a una maquina de escribir, y luego las computadoras y smarphones, a veces recuerdas las décadas de los 80s y 90s donde solian enviar cartas en papel con diseños y cerradas.
+
+
+
 * cómo crees que el producto que estás creando les está resolviendo sus
+
   problemas
+
+
+
+  Creo que esta aplicación web que ulizará diseños vintage, similares a las hojas de carta que se usaban en décadas anteriores ayudará al usuario a rememorar épocas pasadas.
 
 ### UI
 

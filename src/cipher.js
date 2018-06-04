@@ -6,9 +6,19 @@ window.cipher = {
 
         for (let i=0; i < string.length; i++) { 
 
-        let codeado = String.fromCharCode((string.charCodeAt(i) - 65 + offset)%26 + 65);
+        let letraAscci = string.charCodeAt(i);
 
-        salida += codeado
+        if(letraAscci>=65 && letraAscci<=90) {
+            let codeado = String.fromCharCode((letraAscci - 65 + offset)%26 + 65);
+
+            salida += codeado
+        }
+
+        else if (letraAscci === 32){
+            salida += String.fromCharCode(32)
+        }
+
+        
     }
 return salida;
 
@@ -20,9 +30,17 @@ decode : function (offset, string){
 
     for (let i=0; i < string.length; i++) { 
 
-    let codeado = String.fromCharCode((string.charCodeAt(i) - 65 - offset)%26 + 65);
+        let letraAscci = string.charCodeAt(i);
 
-    salida += codeado
+        if(letraAscci>=65 && letraAscci<=90) {
+            let codeado = String.fromCharCode((letraAscci - 65 - offset)%26 + 65);
+
+            salida += codeado
+        }
+
+        else if (letraAscci === 32){
+            salida += String.fromCharCode(32)
+        }
 }
 return salida;
 }
