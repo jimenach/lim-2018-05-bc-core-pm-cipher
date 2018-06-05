@@ -7,8 +7,7 @@ let buttonCifrar = document.getElementById("cifrar");
 let buttonDescifrar = document.getElementById ("descifrar")
 
 
-buttonReset.addEventListener("click", () => {
-mensajeOutput.innerHTML = "  ", mensajeInput.innerHTML = "   "});
+buttonReset.addEventListener("click", () => { mensajeInput.value= " " , offset.value= " " });
 
 buttonCifrar.addEventListener("click", () => {
 
